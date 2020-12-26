@@ -3,90 +3,317 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script
-      src="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/js/jquery.smartWizard.min.js"
-      type="text/javascript"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/css/smart_wizard_all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <title>DEVILSON COSTA | PORTFOLIO</title>
+
+    <!-- Bootstrap CSS-->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+
+    <!-- GSP- GreenSock-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
     <link
-      href="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/css/smart_wizard_all.min.css"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
-      type="text/css"
     />
+    <link rel="icon" type="image/jpg" href="assets/img/Programming-bro-3.svg" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/smart_wizard.min.css" />
-    <link rel="stylesheet" href="css/smart_wizard_arrows.css" /> -->
-    <link rel="stylesheet" href="css/smart_wizard_dots.css" />
-    <link rel="stylesheet" href="css/smart_wizard.css" />
-    <!-- <link rel="stylesheet" href="css/smart_wizard_progress.css" /> -->
   </head>
   <body>
-    <h1>today</h1>
-    <strong>today is good!</strong>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
-      perspiciatis molestiae adipisci minus ducimus velit consectetur eaque
-      asperiores quas veniam id molestias, nesciunt provident commodi obcaecati
-      rerum, aperiam praesentium. Ipsa.
-    </p>
-    <h1>Costa Devilson</h1>
-    <h2>the only one</h2>
-    <h2>the only one4456</h2>
+    <div class="theScrollBtn" id="topBtn">
+      <i class="bx bxs-up-arrow bx-fade-up"></i>
+    </div>
+    <div class="wrapper">
+      <!--===== HEADER =====-->
+      <header class="l-header">
+        <nav class="nav bd-grid">
+          <div>
+            <a href="#" class="nav__logo" style="color: dodgerblue"
+              >DCS COSTA | FRONT-END DEVELOPER</a
+            >
+          </div>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#biography" class="nav__link">Biography</a>
+              </li>
+              <li class="nav__item">
+                <a href="#projects" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__item">
+                <a href="#performance" class="nav__link">Performance</a>
+              </li>
+              <li class="nav__item">
+                <a href="contact.html" class="nav__link">Inbox</a>
+              </li>
+              <li class="nav__item">
+                <i
+                  class="bx bx-lock-open toggle"
+                  style="
+                    color: gold;
+                    cursor: pointer;
+                    font-weight: 400;
+                    font-size: 20px;
+                  "
+                ></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+        </nav>
+      </header>
+
+      <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+          <div class="home__data">
+            <h1 class="home__title">
+              Hello,<br />Check out <br />
+              <span class="home__title-color">my portfolio below</span><br />
+              Freelance <br />FE Developer
+            </h1>
+            <a href="#" class="button theButton">Download CV</a>
+          </div>
+
+          <!-- <div class="home__social">
+            <a href="" class="home__social-icon"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="" class="home__social-icon"
+              ><i class="bx bxl-behance"></i
+            ></a>
+            <a href="" class="home__social-icon"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div> -->
+
+          <div class="home__img">
+            <img
+              src="assets/img/developer.jpg"
+              alt=""
+              style="border-radius: 80%"
+            />
+          </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="biography">
+          <h2 class="section-title">Biography</h2>
+
+          <div class="about__container bd-grid">
+            <div class="about__img">
+              <img src="assets/img/about2.png" alt="" />
+            </div>
+
+            <div>
+              <h2 class="about__subtitle">I am Devilson Costa</h2>
+              <p class="about__text">
+                Grew up with an eager for technology and creativity. He obtained
+                the skills in Software Development in Electrical Engineering at
+                CPUT. He worked as an intern software developer in South Africa.
+                <br />
+                Right now working as Freelancer.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="projects">
+          <h2 class="section-title">Projects Made</h2>
+
+          <div class="work__container bd-grid">
+            <div class="work__img">
+              <img src="assets/img/work1.1.jpg" alt="" />
+            </div>
+            <div class="work__img">
+              <img src="assets/img/soon.jpg" alt="" />
+            </div>
+            <div class="work__img">
+              <img src="assets/img/soon.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="performance">
+          <h2 class="section-title">Performance</h2>
+
+          <div class="skills__container bd-grid">
+            <div>
+              <img
+                src="assets/img/Programming-pana.svg"
+                alt=""
+                class="skills__img"
+              />
+            </div>
+            <div id="counter">
+              <h2 class="skills__subtitle">Performance Skills</h2>
+              <p class="skills__text">
+                I'm sort of lad who is passionate about design and the structure
+                of it, these are the skills I perform better when I develop
+                websites.
+              </p>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-html5 skills__icon"></i>
+                  <span class="skills__name">HTML5</span>
+                </div>
+                <div class="skills__bar skills__html"></div>
+                <div>
+                  <span class="skills__percentage counter-value" data-count="90"
+                    >0%</span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-sass skills__icon"></i>
+                  <span class="skills__name">SASS</span>
+                </div>
+                <div class="skills__bar skills__css"></div>
+                <div>
+                  <span class="skills__percentage counter-value" data-count="70"
+                    >0</span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-css3 skills__icon"></i>
+                  <span class="skills__name">CSS3</span>
+                </div>
+                <div class="skills__bar skills__css"></div>
+                <div>
+                  <span class="skills__percentage counter-value" data-count="75"
+                    >0</span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-javascript skills__icon"></i>
+                  <span class="skills__name">JAVASCRIPT</span>
+                </div>
+                <div class="skills__bar skills__js"></div>
+                <div>
+                  <span class="skills__percentage counter-value" data-count="60"
+                    >0</span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-bootstrap skills__icon"></i>
+                  <span class="skills__name">BOOTSTRAP</span>
+                </div>
+                <div class="skills__bar skills__html"></div>
+                <div>
+                  <span class="skills__percentage counter-value" data-count="95"
+                    >0</span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-git bx-spin skills__icon"></i>
+                  <span class="skills__name">GIT</span>
+                </div>
+                <div class="skills__bar skills__git"></div>
+                <div>
+                  <span
+                    class="skills__percentage counter-value"
+                    data-count="100"
+                    >0</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <!-- <section class="contact section" id="contacts">
+          <h2 class="section-title">Inbox Me</h2>
+
+          <div class="contact__container bd-grid">
+            <form action="" class="contact__form">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="contact__input"
+              />
+              <input type="mail" placeholder="Email" class="contact__input" />
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="10"
+                class="contact__input"
+              ></textarea>
+              <input
+                type="button"
+                value="Send Message"
+                class="contact__button button"
+              />
+            </form>
+          </div>
+        </section> -->
+      </main>
+
+      <!--===== FOOTER =====-->
+      <footer class="footer">
+        <p class="footer__title">My Details</p>
+        <small>🇿🇦+27 74 446 9529</small><br />
+        <small>📩 DevilsonCosta8@gmail.com</small><br />
+        <small>📩 DevilsonCosta@hotmail.com</small>
+        <hr />
+        <div class="footer__social">
+          <a href="#" class="footer__icon"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" class="footer__icon"><i class="bx bxl-github"></i></a>
+        </div>
+        <p>Made with fun and love &#169; 2020 copyright all right reserved</p>
+      </footer>
+    </div>
+    <div class="welcome-section content-hidden">
+      <div class="content-wrap">
+        <ul class="fly-in-text">
+          <li>WELCOME VISITORS👨🏻‍💻</li>
+        </ul>
+        <a href="#" class="enter-button toggle">REVIEW HERE</a>
+      </div>
+    </div>
     <!-- JQuery-->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.3.1.min.js"
     ></script>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/js/jquery.smartWizard.min.js"
-      type="text/javascript"
-    ></script> -->
-    <script src="js/jquery.smartWizard.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script> -->
-    <script src="js/main.js" type="text/javascript"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script>
-      $("#smartwizard").on("leaveStep", function (
-        e,
-        anchorObject,
-        stepNumber,
-        stepDirection
-      ) {
-        var elmForm = $("#form-step-" + stepNumber);
-        if (stepDirection === "forward" && elmForm) {
-          elmForm.validator("validate");
-          var elmErr = elmForm.children(".with-errors");
-          if (elmErr && elmErr.length > 0) {
-            return true;
-          }
-        }
-        return true;
-        // // Initialize the leaveStep event
-        // return confirm(
-        //   "Do you want to leave the step " + currentStepIndex + "?"
-        // );
-      });
-      // // Initialize the showStep event
-      // $("#smartwizard").on("showStep", function (
-      //   e,
-      //   anchorObject,
-      //   stepIndex,
-      //   stepDirection
-      // ) {
-      //   alert("You are on step " + stepIndex + " now");
-      // });
-    </script>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/waypoint.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/barLoading.js" type="text/javascript"></script>
+    <script src="js/scrollTop.js" type="text/javascript"></script>
+    <script src="js/introScrollLock.js" type="text/javascript"></script>
+    <script src="js/loadSkill.js" type="text/javascript"></script>
   </body>
 </html>
