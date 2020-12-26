@@ -66,14 +66,10 @@ body {
   left: 0;
   right: 0;
   padding: 20px;
-  opacity: 1;
-  transition: opacity 0.8s ease;
-  z-index: 100;
-}
-#consent-popup.hidden {
   opacity: 0;
-  z-index: -100;
+  transition: opacity 0.8s ease;
 }
+
 .theBtn {
   position: absolute;
   top: 10px;
@@ -561,12 +557,11 @@ img {
     left: 0;
     right: 0;
     padding: 60px;
-    opacity: 1;
-    transition: opacity 0.8s ease;
-  }
-  #consent-popup.hidden {
     opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: 100;
   }
+
   .theBtn {
     position: absolute;
     top: 120px;

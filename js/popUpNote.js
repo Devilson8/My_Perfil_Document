@@ -1,38 +1,19 @@
-//The copy of first code above for some changes
-const cookieStorage = {
-  getItem: (key) => {
-    const cookies = document.cookie
-      .split(";")
-      .map((cookie) => cookie.split("="))
-      .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
+function showdiv() {
+  document.getElementById("consent-popup").style.opacity = 1;
+  document.getElementById("consent-popup").style.zIndex = 100;
+}
 
-    return cookies[key];
-  },
-  setItem: (key, value) => {
-    document.cookie = `${key}=${value}`;
-  },
-};
+setTimeout("showdiv()", 3000);
 
-const storageType = /*localStorage;*/ /*sessionStorage*/ cookieStorage;
-const consentPropertyName = "jdc_consent";
+// function hidediv() {
+//   document.getElementById("consent-popup").style.opacity = 0;
+// }
 
-const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
-const saveToStorage = () => storageType.setItem(consentPropertyName, true);
+// setTimeout("hidediv()", 7000);
 
-window.onload = () => {
-  const consentPopup = document.getElementById("consent-popup");
-  const acceptBtn = document.getElementById("accept");
-
-  const acceptFn = (event) => {
-    saveToStorage(storageType);
-    consentPopup.classList.add("hidden");
-  };
-
-  acceptBtn.addEventListener("click", acceptFn);
-
-  if (shouldShowPopup()) {
-    setTimeout(() => {
-      consentPopup.classList.remove("hidden");
-    }, 4000);
-  }
-};
+function acceptDiv() {
+  document.getElementById("consent-popup").style.transition =
+    "opacity 0.8s ease";
+  document.getElementById("consent-popup").style.zIndex = -1;
+  document.getElementById("consent-popup").style.opacity = 0;
+}
