@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEVILSON COSTA | PORTFOLIO</title>
+    <title>DEVILSON COSTA | PERFIL</title>
 
     <!-- Bootstrap CSS-->
     <link
@@ -24,6 +24,13 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div id="consent-popup" class="hidden alert alert-warning" role="alert">
+      <p>
+        Whenever the scrolling is locked, there is a gold lock in the menu bar
+        to unlock/lock it!. I use this for security purpose.
+        <button class="theBtn" id="accept">Got it</button>
+      </p>
+    </div>
     <div class="theScrollBtn" id="topBtn">
       <i class="bx bxs-up-arrow bx-fade-up"></i>
     </div>
@@ -33,7 +40,8 @@
         <nav class="nav bd-grid">
           <div>
             <a href="#" class="nav__logo" style="color: dodgerblue"
-              >DCS COSTA | FRONT-END DEVELOPER</a
+              >DCS COSTA <i class="bx bx-code-block bx-flashing"></i> FRONT-END
+              DEVELOPER</a
             >
           </div>
 
@@ -80,10 +88,12 @@
           <div class="home__data">
             <h1 class="home__title">
               Check out <br />
-              <span class="home__title-color">my portfolio below</span><br />
+              <span class="home__title-color">My portfolio below</span><br />
               Freelance FE Developer
             </h1>
-            <a href="#" class="button theButton">Download CV</a>
+            <a href="#" class="button theButton nav-link text-light disabled"" aria-disabled="true"
+              >Download CV</a
+            >
           </div>
 
           <!-- <div class="home__social">
@@ -143,7 +153,9 @@
                 the skills in Software Development in Electrical Engineering at
                 CPUT. He worked as an intern software developer in South Africa.
                 <br />
-                Right now working as Freelancer.
+                Currently working as Freelancer, I already developed my very
+                first website, you can have a look on it right above on the
+                projects section.
               </p>
             </div>
           </div>
@@ -325,5 +337,6 @@
     <script src="js/scrollTop.js" type="text/javascript"></script>
     <script src="js/introScrollLock.js" type="text/javascript"></script>
     <script src="js/loadSkill.js" type="text/javascript"></script>
+    <script src="js/popUpNote.js" type="text/javascript"></script>
   </body>
 </html>
