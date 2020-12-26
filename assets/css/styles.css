@@ -528,6 +528,34 @@ img {
     text-align: center;
   }
 }
+@media (orientation: portrait) and (max-width: 720px) {
+  .l-header {
+    background-image: url("../img/theBack_2.2.png");
+    background-size: cover;
+  }
+  .home {
+    background-image: url("../img/theBack_2.3.png");
+    background-size: cover;
+  }
+  .home__title {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    margin-bottom: 15px;
+  }
+  .theButton {
+    margin-left: 100px;
+    padding: 0.6rem 2.2rem;
+  }
+  .welcome-section {
+    font-size: 12.5px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer {
+    font-size: 15px;
+  }
+}
 @media (orientation: portrait) and (max-width: 414px) {
   .l-header {
     background-image: url("../img/theBack_2.2.png");
