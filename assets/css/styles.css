@@ -608,6 +608,11 @@ img {
   }
 } */
 @media (orientation: portrait) and (max-width: 414px) {
+  body {
+    background-image: url("../img/theBack_2.2.png");
+    background-size: cover;
+    background-attachment: fixed;
+  }
   .l-header {
     background-image: url("../img/theBack_2.2.png");
     background-size: cover;
