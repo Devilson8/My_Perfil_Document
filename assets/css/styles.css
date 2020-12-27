@@ -59,6 +59,9 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  background-image: url("../img/theBack_2.4.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 #consent-popup {
   position: fixed;

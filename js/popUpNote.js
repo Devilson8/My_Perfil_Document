@@ -1,6 +1,6 @@
 function showdiv() {
   document.getElementById("consent-popup").style.opacity = 1;
-  document.getElementById("consent-popup").style.zIndex = 100;
+  document.getElementById("consent-popup").style.zIndex = 10;
 }
 
 setTimeout("showdiv()", 3000);
@@ -14,6 +14,6 @@ setTimeout("showdiv()", 3000);
 function acceptDiv() {
   document.getElementById("consent-popup").style.transition =
     "opacity 0.8s ease";
-  document.getElementById("consent-popup").style.zIndex = -1;
+  document.getElementById("consent-popup").style.zIndex = -10;
   document.getElementById("consent-popup").style.opacity = 0;
 }
