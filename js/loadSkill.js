@@ -13,7 +13,7 @@ $(window).scroll(function () {
         },
 
         {
-          duration: 2000,
+          duration: 8000,
           easing: "swing",
           step: function () {
             $this.text(Math.floor(this.countNum));
